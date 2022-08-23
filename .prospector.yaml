@@ -1,0 +1,20 @@
+strictness: veryhigh
+
+ignore-paths:
+  - migrations
+  - .venv
+  - _project_/settings_local.py
+  - _project_/settings.py
+  - README.md
+  - conftest.py
+  - manage.py
+
+uses:
+    - django
+
+autodetect: false
+
+pylint:
+  options:
+    django-settings-module: _project_.settings
+    max-parents: 10
