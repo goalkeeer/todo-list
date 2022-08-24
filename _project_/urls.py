@@ -9,5 +9,6 @@ api_routers = (todo_list_router.urls,)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include((todo_list_router.urls, 'api')))
+    path('api/', include((todo_list_router.urls, 'api'))),
+    path('auth/', include(('custom_auth.urls', 'auth')))
 ]

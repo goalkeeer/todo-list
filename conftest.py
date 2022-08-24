@@ -1,6 +1,12 @@
 import pytest
 
 
+@pytest.fixture()
+def anon_api_client():
+    from rest_framework.test import APIClient
+    return APIClient()
+
+
 @pytest.fixture
 def api_user():
     from django.contrib.auth import get_user_model
