@@ -9,3 +9,7 @@ Example `.env` file:
 Run app:
 
     docker-compose up
+
+Open swagger:
+    
+    http://127.0.0.1:8000/swagger/
